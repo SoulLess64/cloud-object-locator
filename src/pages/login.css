@@ -1,0 +1,164 @@
+.login-container {
+  background-color: #e6f0ec;
+  min-height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+  padding: 40px 20px;
+  text-align: center;
+  color: #222;
+}
+
+.header {
+  background-color: #b30000;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+.header h2 {
+  margin: 10px 0;
+}
+
+.header h3 {
+  margin: 5px 0;
+}
+
+.header h4 {
+  margin: 5px 0;
+  font-weight: normal;
+}
+
+.project-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #ae0000;
+}
+
+.submit-section {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.submit-block {
+  background-color: #e8e3e3;
+  padding: 20px 30px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+  width: 280px;
+  text-align: left;
+}
+
+.submit-block h3 {
+  color: #a30000;
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.submit-block p {
+  margin: 6px 0;
+  font-size: 16px;
+}
+
+.pin-box {
+  margin-bottom: 40px;
+}
+
+.pin-box label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #b30000;
+}
+
+.pin-box input {
+  padding: 10px;
+  margin: 10px;
+  width: 180px;
+  border: 1px solid #999;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.pin-box input:focus {
+  outline: none;
+  border-color: #b30000;
+  box-shadow: 0 0 5px rgba(179, 0, 0, 0.3);
+}
+
+.pin-box input:disabled {
+  background-color: #f5f5f5;
+  cursor: not-allowed;
+}
+
+.pin-box button {
+  padding: 10px 20px;
+  background-color: #b30000;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.pin-box button:hover:not(:disabled) {
+  background-color: #800000;
+}
+
+.pin-box button:disabled {
+  background-color: #999;
+  cursor: not-allowed;
+}
+
+.footer-text {
+  color: #a30000;
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+  margin-top: 40px;
+  letter-spacing: 0.5px;
+  text-shadow: 1px 1px 0px #fff2f2;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .submit-section {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .submit-block {
+    width: 90%;
+    max-width: 300px;
+  }
+  
+  .project-title {
+    font-size: 1.5rem;
+  }
+  
+  .header {
+    padding: 10px 15px;
+  }
+  
+  .header h3 {
+    font-size: 16px;
+  }
+  
+  .header h4 {
+    font-size: 14px;
+  }
+  
+  .pin-box input {
+    width: 160px;
+  }
+}
